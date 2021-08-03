@@ -46,6 +46,24 @@
 2. General styles
 ============================================================================= */
 
+.port-item {
+  margin: 20px 0 50px 0;
+}
+
+.port-title {
+  padding: 10px 0;
+  border-bottom: 3px solid #2eca7f;
+}
+
+.port-title h3{
+  text-align: center;
+  font-size: 28px;
+
+}
+
+
+
+
 html {
   position: relative;
   height: 100%;
