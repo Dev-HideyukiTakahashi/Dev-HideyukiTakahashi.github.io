@@ -15,6 +15,11 @@
     <meta name="keywords" content="curriculo" />
     <link rel="shortcut icon" href="dev.ico" />
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="css/animate.css" type="text/css" />
@@ -62,11 +67,8 @@
                 <a class="pt-trigger" href="index.html#resume">Currículo</a>
               </li>
               <li>
-                <a class="pt-trigger" href="index.html#portfolio">Portfólio</a>
-              </li>
-              <li>
-                <a class="pt-trigger" href="index.html#certificado"
-                  >Certificados</a
+                <a class="pt-trigger" href="index.html#portfolio"
+                  >Portfólio</a
                 >
               </li>
             </ul>
@@ -255,6 +257,9 @@
                               intermediário, focado ao essencial para um
                               desenvolvedor no dia a dia.
                             </p>
+                            <div class="certificado"> 
+                              <a href="images/certificados/essencial/Github.jpg" class="btn btn-secondary btn-certificado" target="_blank">Visualizar Certificado</a>
+                            </div>
                           </div>
                           <!-- / Education 2 -->
 
@@ -377,33 +382,28 @@
 
                         <div class="skills-info">
                           <h4>Visual Studio Code</h4>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-0"></div>
-                          </div>
-
-                          <h4>CSS Flexbox</h4>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-1"></div>
+                          <div class="progress" style="height: 20px;">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 90%;">90%</div>
                           </div>
 
                           <h4>Adobe XD</h4>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-2"></div>
+                          <div class="progress" style="height: 20px;">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 80%;">80%</div>
                           </div>
 
-                          <h4>MySql</h4>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-7"></div>
+                          <h4>MySQL</h4>
+                          <div class="progress" style="height: 20px;">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 60%;">60%</div>
                           </div>
 
                           <h4>PostgreSQL</h4>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-7"></div>
+                          <div class="progress" style="height: 20px;">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 60%;">60%</div>
                           </div>
 
-                          <h4>Git e Github</h4>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-1"></div>
+                          <h4>Git e github</h4>
+                          <div class="progress" style="height: 20px;">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 90%;">90%</div>
                           </div>
                         </div>
                       </div>
@@ -417,29 +417,30 @@
 
                         <div class="skills-info">
                           <h4>Java</h4>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-3"></div>
+                          <div class="progress" style="height: 20px;">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 70%;">70%</div>
                           </div>
 
                           <h4>C</h4>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-3"></div>
+                          <div class="progress" style="height: 20px;">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 50%;">50%</div>
                           </div>
 
                           <h4>HTML 5</h4>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-2"></div>
+                          <div class="progress" style="height: 20px;">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 80%;">80%</div>
                           </div>
 
-                          <h4>Css3</h4>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-3"></div>
+                          <h4>CSS3</h4>
+                          <div class="progress" style="height: 20px;">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 70%;">70%</div>
                           </div>
 
                           <h4>Javascript</h4>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-4"></div>
+                          <div class="progress" style="height: 20px;">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 10%;">10%</div>
                           </div>
+
                         </div>
                       </div>
                     </div>
@@ -466,11 +467,11 @@
             </section>
             <!-- End of Resume Subpage -->
 
-            <!-- certificado Subpage -->
-            <section class="pt-page" data-id="certificado">
+            <!-- Portfolio Subpage -->
+            <section class="pt-page" data-id="portfolio">
               <div class="section-inner custom-page-content">
                 <div class="page-header color-1">
-                  <h2>Certificados</h2>
+                  <h2>Portfólio</h2>
                 </div>
                 <div class="page-content">
                   <!-- Certificado Content -->
@@ -480,231 +481,93 @@
                       <li class="active">
                         <a
                           class="filter btn btn-sm btn-link"
-                          data-group="essencial"
-                          >Essencial</a
+                          data-group="todos"
+                          >Todos</a
                         >
                       </li>
                       <li>
                         <a
                           class="filter btn btn-sm btn-link"
-                          data-group="programacao"
-                          >Programação</a
+                          data-group="web-design"
+                          >Web Design</a
                         >
                       </li>
                       <li>
                         <a
                           class="filter btn btn-sm btn-link"
-                          data-group="dataScience"
-                          >Data Science</a
+                          data-group="estudos"
+                          >Estudos</a
                         >
                       </li>
                       <li>
-                        <a class="filter btn btn-sm btn-link" data-group="extra"
-                          >Extras</a
+                        <a class="filter btn btn-sm btn-link" data-group="projetos"
+                          >Projetos</a
                         >
                       </li>
                     </ul>
-                    <!-- End of Certificado filter -->
+                    <!-- End of Portfolio filter -->
 
-                    <!-- Certificado Grid -->
-                    <div
-                      id="portfolio_grid"
-                      class="portfolio-grid portfolio-masonry masonry-grid-3"
-                    >
-                      <!-- /Certificado Item 1 -->
-                      <figure class="item" data-groups='["essencial"]'>
-                        <a
-                          href="images/certificados/Github.jpg"
-                          class="lightbox"
-                          title="Git e github essencial para desenvolvedores"
-                        >
-                          <img
-                            src="images/certificados/essencial/Github.jpg"
-                            alt=""
-                          />
-                          <div>
-                            <h5 class="name">Git e github essencial</h5>
-                            <small>Certificado</small>
-                            <i class="fa fa-image"></i>
-                          </div>
-                        </a>
-                      </figure>
-                      <!-- /Certificado Item 1 -->
-                      <!-- /Certificado Item 2 -->
-                      <figure class="item" data-groups='["programacao"]'>
-                        <a
-                          href="images/certificados/back-end/Java_Basico.png"
-                          class="lightbox"
-                          title="Java básico"
-                        >
-                          <img
-                            src="images/certificados/back-end/Java_Basico.png"
-                            alt=""
-                          />
-                          <div>
-                            <h5 class="name">Curso de Java básico</h5>
-                            <small>Certificado</small>
-                            <i class="fa fa-image"></i>
-                          </div>
-                        </a>
-                      </figure>
-                      <!-- /Certificado Item 3 -->
-                      <figure class="item" data-groups='["programacao"]'>
-                        <a
-                          href="images/certificados/back-end/Java_Intermediario.png"
-                          class="lightbox"
-                          title="Java básico"
-                        >
-                          <img
-                            src="images/certificados/back-end/Java_Intermediario.png"
-                            alt=""
-                          />
-                          <div>
-                            <h5 class="name">Curso de Java intermediário</h5>
-                            <small>Certificado</small>
-                            <i class="fa fa-image"></i>
-                          </div>
-                        </a>
-                      </figure>
-                      <!-- /Certificado Item 3 -->
-                    </div>
-                    <!-- /Certificado Grid -->
-                  </div>
-                  <!-- /Certificado Content -->
-                </div>
-              </div>
-            </section>
-            <!-- /Certificado Subpage -->
-
-            <!-- Portfolio Subpage -->
-            <section class="pt-page" data-id="portfolio">
-              <div class="section-inner custom-page-content">
-                <div class="page-header color-1">
-                  <h2>Portfólio</h2>
-                </div>
-                <div class="page-content">
-                  <!-- Portfolio Content -->
-                  <div class="portfolio-content">
                     <!-- Portfolio Grid -->
                     <div
                       id="portfolio_grid"
                       class="portfolio-grid portfolio-masonry masonry-grid-3"
                     >
-                      <div class="port-title">
-                        <h3>Front-end</h3>
-                      </div>
-
-                      <div class="port-container">
-                        <!-- Portfolio item 1 -->
-                        <figure class="item port-item">
-                          <a
-                            href="portfolio/flexblog/index.html"
-                            target="_blank"
-                            title="Projeto CSS Flexbox"
-                          >
-                            <img src="images/portfolio/flexblog.png" alt="" />
-                            <div>
-                              <h5 class="name">Projeto CSS Flexbox</h5>
-                              <small>Blog feito para estudos</small>
-                              <i class="fa fa-file-text-o"></i>
-                            </div>
-                          </a>
-                        </figure>
-                        <!-- Portfolio item 1 -->
-                        <!-- Portfolio item 2 -->
-                        <figure class="item port-item">
-                          <a
-                            href="#"
-                            target="_blank"
-                            title="Codificando"
-                          >
-                            <img src="images/portfolio/front-end.png" alt="" />
-                            <div>
-                              <h5 class="name">Codificando</h5>
-                              <small>loading . . .</small>
-                              <i class="fa fa-file-text-o"></i>
-                            </div>
-                          </a>
-                        </figure>
-                        <!-- Portfolio item 2 -->
-                        <!-- Portfolio item 3 -->
-                        <figure class="item port-item">
-                          <a
-                            href="#"
-                            target="_blank"
-                            title="Codificando"
-                          >
-                            <img src="images/portfolio/front-end.png" alt="" />
-                            <div>
-                              <h5 class="name">Codificando</h5>
-                              <small>loading . . .</small>
-                              <i class="fa fa-file-text-o"></i>
-                            </div>
-                          </a>
-                        </figure>
-                        <!-- Portfolio item 3 -->
-                      </div>
-
-                      <div class="port-title">
-                        <h3>Back-end</h3>
-                      </div>
-
-                      <div class="port-container">
-                        <!-- Portfolio item 1 -->
-                        <figure class="item port-item">
-                          <a
-                            href="#"
-                            target="_blank"
-                            title="Codificando"
-                          >
-                            <img src="images/portfolio/front-end.png" alt="" />
-                            <div>
-                              <h5 class="name">Codificando</h5>
-                              <small>loading . . .</small>
-                              <i class="fa fa-file-text-o"></i>
-                            </div>
-                          </a>
-                        </figure>
-                        <!-- Portfolio item 1 -->
-                        <!-- Portfolio item 2 -->                    
-                        <div class="port-container">
-                          <!-- Portfolio item 1 -->
-                          <figure class="item port-item">
-                            <a
-                              href="#"
-                              target="_blank"
-                              title="Codificando"
-                            >
-                              <img src="images/portfolio/front-end.png" alt="" />
-                              <div>
-                                <h5 class="name">Codificando</h5>
-                                <small>loading . . .</small>
-                                <i class="fa fa-file-text-o"></i>
-                              </div>
-                            </a>
-                          </figure>
-                        <!-- Portfolio item 2 -->
-                        <!-- Portfolio item 3 -->
-                        <div class="port-container">
-                          <!-- Portfolio item 1 -->
-                          <figure class="item port-item">
-                            <a
-                              href="#"
-                              target="_blank"
-                              title="Codificando"
-                            >
-                              <img src="images/portfolio/front-end.png" alt="" />
-                              <div>
-                                <h5 class="name">Codificando</h5>
-                                <small>loading . . .</small>
-                                <i class="fa fa-file-text-o"></i>
-                              </div>
-                            </a>
-                          </figure>
-                        <div class="port-container">
-
-                      </div>
-
+                      <!-- /Portfolio Item 1 -->
+                      <figure class="item" data-groups='["todos","estudos"]'>
+                        <a
+                          href="portfolio/flexblog/index.html"
+                          target="_blank"
+                          title="Projeto CSS Flexbox"
+                        >
+                          <img
+                            src="images/portfolio/flexblog.png"
+                            alt="Flexblog estudos em CSS Flexbox"
+                          />
+                          <div>
+                            <h5 class="name">Projeto CSS Flexbox</h5>
+                            <small>Flexblog estudos em CSS Flexbox</small>
+                            <i class="fa fa-image"></i>
+                          </div>
+                        </a>
+                      </figure>
+                      <!-- /Portfolio Item 1 -->
+                      <!-- /Portfolio Item 2 -->
+                      <figure class="item" data-groups='["programacao"]'>
+                        <a
+                          href="images/Portfolios/back-end/Java_Basico.png"
+                          class="lightbox"
+                          title="Java básico"
+                        >
+                          <img
+                            src="images/Portfolios/back-end/Java_Basico.png"
+                            alt=""
+                          />
+                          <div>
+                            <h5 class="name">Curso de Java básico</h5>
+                            <small>Portfolio</small>
+                            <i class="fa fa-image"></i>
+                          </div>
+                        </a>
+                      </figure>
+                      <!-- /Portfolio Item 3 -->
+                      <figure class="item" data-groups='["programacao"]'>
+                        <a
+                          href="images/Portfolios/back-end/Java_Intermediario.png"
+                          target="_blank"
+                          title="Java básico"
+                        >
+                          <img
+                            src="images/Portfolios/back-end/Java_Intermediario.png"
+                            alt=""
+                          />
+                          <div>
+                            <h5 class="name">Curso de Java intermediário</h5>
+                            <small>Portfolio</small>
+                            <i class="fa fa-image"></i>
+                          </div>
+                        </a>
+                      </figure>
+                      <!-- /Portfolio Item 3 -->
                     </div>
                     <!-- /Portfolio Grid -->
                   </div>
@@ -712,7 +575,8 @@
                 </div>
               </div>
             </section>
-            <!-- /Portfolio Subpage -->
+            <!-- /Portfolio Fim -->
+
           </div>
         </div>
         <!-- /Page changer wrapper -->

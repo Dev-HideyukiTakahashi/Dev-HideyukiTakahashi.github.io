@@ -355,6 +355,7 @@ button, input[type="button"], input[type="submit"] {
 .btn-primary:hover,
 button:hover, input[type="button"]:hover, input[type="submit"]:hover {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.3);
+
 }
 
 .btn-secondary,
@@ -367,6 +368,7 @@ button:hover, input[type="button"]:hover, input[type="submit"]:hover {
 
 .btn-secondary:hover {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.3);
+  font-weight: bold;
 }
 /* / buttons */
 
