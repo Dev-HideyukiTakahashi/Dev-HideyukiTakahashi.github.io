@@ -1,0 +1,29 @@
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    color: #141414;
+    font-size: 36px;
+}
+
+.header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.header-menu a {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #141414;
+    display: block;
+}

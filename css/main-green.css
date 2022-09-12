@@ -28,19 +28,17 @@
 
 ============================================================================= */
 
-
 /* ============================================================================= 
 1. Fonts
 ============================================================================= */
 /* Font Awesome icons font */
-@import url('font-awesome.css'); /* Full icons list: http://fontawesome.io/icons/ */
+@import url("font-awesome.css"); /* Full icons list: http://fontawesome.io/icons/ */
 
 /* Material Design Iconic Font */
-@import url('material-design-iconic-font.min.css'); /* Full icons list: http://zavoloklom.github.io/material-design-iconic-font/cheatsheet.htmls */
+@import url("material-design-iconic-font.min.css"); /* Full icons list: http://zavoloklom.github.io/material-design-iconic-font/cheatsheet.htmls */
 
 /* Google fonts */
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,700,700i|Montserrat:300,400,500,600,700");
-
 
 /* ============================================================================= 
 2. General styles
@@ -54,14 +52,10 @@
   border-bottom: 3px solid #2eca7f;
 }
 
-.portfolio-content .port-title h3{
+.portfolio-content .port-title h3 {
   text-align: center;
   font-size: 28px;
 }
-
-
-
-
 
 html {
   position: relative;
@@ -71,14 +65,14 @@ html {
 
 body {
   position: relative;
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   color: #424242;
   margin: 0;
   height: 100%;
   width: 100%;
   font-size: 15px;
   line-height: 1.6em;
-  background-color: #f5f5f5;
+  background-color: #dbd4d4;
   overflow-x: hidden;
   overflow-y: auto;
   background-image: url(../images/main_bg.png);
@@ -105,7 +99,7 @@ a {
 }
 
 a:hover {
-  color: #FF9800;
+  color: #ff9800;
   text-decoration: none;
   outline: none;
 }
@@ -114,9 +108,14 @@ a:focus {
   outline: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #212121;
-  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-family: "Montserrat", Helvetica, sans-serif;
   font-weight: 700;
   line-height: 1.5em;
   margin-top: 0;
@@ -188,10 +187,11 @@ img {
   -moz-box-shadow: none;
   box-shadow: none;
   outline: none;
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
 }
 
-textarea.form-control, textarea.form-control:focus {
+textarea.form-control,
+textarea.form-control:focus {
   height: auto;
 }
 
@@ -330,7 +330,9 @@ textarea.form-control, textarea.form-control:focus {
 /* buttons */
 .btn-primary,
 .btn-secondary,
-button, input[type="button"], input[type="submit"] {
+button,
+input[type="button"],
+input[type="submit"] {
   text-transform: uppercase;
   font-family: inherit;
   font-size: 14px;
@@ -345,29 +347,32 @@ button, input[type="button"], input[type="submit"] {
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:focus,
-button, input[type="button"], input[type="submit"] {
+button,
+input[type="button"],
+input[type="submit"] {
   background-color: #2eca7f;
   color: #fff;
   border: 0;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.3);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .btn-primary:hover,
-button:hover, input[type="button"]:hover, input[type="submit"]:hover {
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.3);
-
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  background-color: #fff;
+  background-color: #dbd4d4;
   color: #212121;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.3);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .btn-secondary:hover {
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3);
   font-weight: bold;
 }
 /* / buttons */
@@ -394,16 +399,17 @@ body > footer .copyrights {
   margin-bottom: 12px;
   text-align: center;
   font-size: 12px;
-  color: #9e9e9e;
+  color: #212121;
 }
 /* / copyrights block */
 /* / Footer */
 
-
 /* ============================================================================= 
 3. Page loadig animation
 ============================================================================= */
-.no-js .preloader { display: none;  }
+.no-js .preloader {
+  display: none;
+}
 .preloader {
   position: fixed;
   left: 0px;
@@ -423,7 +429,7 @@ body > footer .copyrights {
   color: inherit;
   opacity: 1;
   transition: opacity 0.3s;
-  transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%, -50%, 0);
 }
 
 .preloader-spinner {
@@ -436,7 +442,7 @@ body > footer .copyrights {
 
 .preloader-spinner:before,
 .preloader-spinner:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -448,30 +454,30 @@ body > footer .copyrights {
 }
 
 .preloader-spinner:before {
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .preloader-spinner:after {
   border-color: transparent;
   border-top-color: #2eca7f;
-  -webkit-animation: rotation 0.82s infinite cubic-bezier(0.6,0.3,0.3,0.6);
-  animation: rotation 0.82s infinite cubic-bezier(0.6,0.3,0.3,0.6);
+  -webkit-animation: rotation 0.82s infinite cubic-bezier(0.6, 0.3, 0.3, 0.6);
+  animation: rotation 0.82s infinite cubic-bezier(0.6, 0.3, 0.3, 0.6);
 }
 
-@-webkit-keyframes rotation{
-  0%
-  {
-    -webkit-transform:rotate(0deg)
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
   }
-  100%{
-    -webkit-transform:rotate(360deg)
+  100% {
+    -webkit-transform: rotate(360deg);
   }
 }
-@keyframes rotation{
-  0%{
-    transform:rotate(0deg)
-  }100%{
-    transform:rotate(360deg)
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
@@ -525,13 +531,13 @@ body > footer .copyrights {
   background-color: #fff;
   overflow: hidden;
   border-radius: 15px;
-  -webkit-box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
-  box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
-  -webkit-transform: translate3d(0,0,0);
-  -o-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  -webkit-box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   -ms-transform: none;
 }
 
@@ -645,9 +651,9 @@ body > footer .copyrights {
   .header.sticked {
     background-color: #fff;
     height: 60px;
-    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
-    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -662,7 +668,7 @@ body > footer .copyrights {
   color: #49515d;
   font-size: 20px;
   font-weight: 500;
-  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-family: "Montserrat", Helvetica, sans-serif;
   line-height: 1;
   margin: 38px 0 0;
 }
@@ -739,7 +745,7 @@ body > footer .copyrights {
   right: 0;
   left: 0;
   bottom: 0;
-  content: '';
+  content: "";
   width: 0;
   height: 2px;
   margin: 0 auto;
@@ -783,9 +789,6 @@ body > footer .copyrights {
   line-height: 50px;
 }
 /* /Mobile menu toggle */
-
-
-
 
 /* ============================================================================= 
 6. Site content
@@ -848,8 +851,6 @@ body > footer .copyrights {
   background-color: #fff;
 }
 
-
-
 /* ============================================================================= 
 7. Subpages
 ============================================================================= */
@@ -874,9 +875,9 @@ body > footer .copyrights {
   margin-bottom: -75px;
   border: 3px solid #fff;
   background-color: #fff;
-  -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
-  box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -928,15 +929,15 @@ body > footer .copyrights {
   margin: 0 1px;
   color: #9e9e9e;
   text-align: center;
-  -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
-  box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
 .start-page-content .social-links a:hover {
-  -webkit-box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.2);
-  -moz-box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.2);
-  box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.2);
 }
 
 .start-page-content .social-links a i {
@@ -983,10 +984,6 @@ body > footer .copyrights {
   color: #9e9e9e;
 }
 
-
-
-
-
 /* =======================================
 7.2. Resume subpage
 ======================================= */
@@ -1002,11 +999,11 @@ body > footer .copyrights {
   margin-bottom: 20px;
   background-color: #fff;
   border-left: 2px solid #2eca7f;
-  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
 .timeline-item:hover {
-  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 .timeline-item:last-child {
@@ -1014,7 +1011,7 @@ body > footer .copyrights {
 }
 
 .timeline-item:before {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   background-color: #fff;
@@ -1028,7 +1025,7 @@ body > footer .copyrights {
 }
 
 .timeline-item:after {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   background-color: #2eca7f;
@@ -1066,17 +1063,15 @@ body > footer .copyrights {
   border-left: 1px solid #e0e0e0;
 }
 
-
-
 /* Skills */
 .skills-info {
   margin-bottom: 30px;
 }
 
-.skills-info h4 { 
+.skills-info h4 {
   font-size: 0.8em;
   line-height: 1.1em;
-  position: relative; 
+  position: relative;
   margin: 0 0 5px;
 }
 
@@ -1145,9 +1140,6 @@ body > footer .copyrights {
 .download-resume {
   margin-top: 50px;
 }
-
-
-
 
 /* =======================================
 7.3. Services subpage
@@ -1298,7 +1290,7 @@ body > footer .copyrights {
 .testimonial-author {
   display: inline-block;
   font-size: 15px;
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   color: #212121;
   margin: 0;
   font-weight: 400;
@@ -1345,9 +1337,9 @@ body > footer .copyrights {
 
 .testimonial-picture img {
   width: 100%;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
-  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
   border-radius: 100px;
 }
 
@@ -1358,7 +1350,7 @@ body > footer .copyrights {
   margin: 0;
   text-transform: uppercase;
   font-style: italic;
-  font-weight: lighter
+  font-weight: lighter;
 }
 /* /Testimonials */
 
@@ -1403,7 +1395,7 @@ body > footer .copyrights {
 }
 
 .lm-pricing .lm-package-wrap.highlight-col .lm-heading-row span:after {
-  content: '';
+  content: "";
   height: 2px;
   margin-top: 0;
   background-color: #2eca7f;
@@ -1437,9 +1429,6 @@ body > footer .copyrights {
   padding: 10px 0 20px;
 }
 /* /Pricing */
-
-
-
 
 /* =======================================
 7.4. Portfolio subpage
@@ -1521,7 +1510,7 @@ body > footer .copyrights {
 }
 
 .portfolio-grid figure a div:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1570,15 +1559,16 @@ body > footer .copyrights {
   padding: 10px 0;
   text-transform: uppercase;
   font-weight: normal;
-  color: rgba(255,255,255,0.9);
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-  border-bottom: 1px solid rgba(255,255,255,0.5);
-  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
-  -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
-  box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1),
+    0 -10px 0 rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1),
+    0 -10px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 -10px 0 rgba(255, 255, 255, 0.3);
 }
 /* End of Direction-Aware Hover Effect */
-
 
 /* =======================================
 7.5. Blog subpage
@@ -1605,15 +1595,15 @@ body > footer .copyrights {
   padding: 0;
   background: #fff;
   text-align: center;
-  -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .blog-card:hover {
-  -webkit-box-shadow: 0 1px 15px rgba(0,0,0,0.11);
-  -moz-box-shadow: 0 1px 15px rgba(0,0,0,0.11);
-  box-shadow: 0 1px 15px rgba(0,0,0,0.11);
+  -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.11);
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.11);
 }
 
 .blog-card .post-image {
@@ -1666,9 +1656,9 @@ body > footer .copyrights {
 .blog-card .media-block a .mask {
   position: absolute;
   background: #4f565e;
-  background: rgba(79,86,94,0.6);
+  background: rgba(79, 86, 94, 0.6);
   display: inline-block;
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -1738,7 +1728,8 @@ body > footer .copyrights {
   font-weight: 400;
 }
 
-.blog-card .post-meta .item, .post-meta .item a {
+.blog-card .post-meta .item,
+.post-meta .item a {
   color: #a6a6a6;
 }
 
@@ -1751,8 +1742,6 @@ body > footer .copyrights {
 .post-meta .item:before {
   padding-right: 5px;
 }
-
-
 
 /* =======================================
 7.6. Contact subpage
@@ -1813,7 +1802,6 @@ body > footer .copyrights {
   margin: 15px 0 30px;
 }
 /* / Google Map */
-
 
 /* ============================================================================= 
 8. Sliders
@@ -1885,7 +1873,7 @@ body > footer .copyrights {
   -webkit-tap-highlight-color: transparent;
 }
 
-.portfolio-page-carousel .owl-nav [class*='owl-'] {
+.portfolio-page-carousel .owl-nav [class*="owl-"] {
   color: #9e9e9e;
   margin: 0;
   padding: 4px 7px;
@@ -1899,7 +1887,7 @@ body > footer .copyrights {
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio-page-carousel .owl-nav [class*='owl-']:before {
+.portfolio-page-carousel .owl-nav [class*="owl-"]:before {
   display: block;
   font-family: FontAwesome;
   font-size: 30px;
@@ -1948,7 +1936,8 @@ body > footer .copyrights {
   display: inline-block;
 }
 
-.portfolio-page-carousel .owl-dots .owl-dot.active span, .portfolio-page-carousel .owl-dots .owl-dot:hover span {
+.portfolio-page-carousel .owl-dots .owl-dot.active span,
+.portfolio-page-carousel .owl-dots .owl-dot:hover span {
   background: #9e9e9e;
 }
 
@@ -1964,7 +1953,6 @@ body > footer .copyrights {
   border-radius: 30px;
 }
 /* Portfolio Carousel */
-
 
 /* ============================================================================= 
 9. Portfolio Full info page
@@ -2057,7 +2045,7 @@ body > footer .copyrights {
 }
 
 .project-general-info li {
-  margin : 0 0 10px;
+  margin: 0 0 10px;
 }
 
 .project-general-info .fa {
@@ -2144,9 +2132,9 @@ body > footer .copyrights {
   max-width: 1032px;
   margin: 0 auto;
   border-radius: 15px;
-  -webkit-box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
-  box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
 }
 
 .single-page-content .content-area .page-content {
@@ -2182,7 +2170,9 @@ blockquote p:last-child {
   margin-bottom: 0;
 }
 
-blockquote footer, blockquote small, blockquote .small {
+blockquote footer,
+blockquote small,
+blockquote .small {
   color: #9e9e9e;
 }
 
@@ -2200,7 +2190,7 @@ blockquote footer, blockquote small, blockquote .small {
 }
 
 .entry-meta a:hover {
-  color: #F4511E;
+  color: #f4511e;
 }
 
 .entry-meta.entry-tags-share {
@@ -2311,9 +2301,9 @@ blockquote footer, blockquote small, blockquote .small {
     z-index: 1001;
     overflow: auto;
     background-color: #2eca7f;
-    -webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
     -webkit-transition: all 0.44s ease-in-out;
     -moz-transition: all 0.44s ease-in-out;
     -o-transition: all 0.44s ease-in-out;
@@ -2346,9 +2336,9 @@ blockquote footer, blockquote small, blockquote .small {
     right: 0;
     height: 50px;
     background-color: #2eca7f;
-    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
-    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
     z-index: 1000;
   }
 
@@ -2363,7 +2353,7 @@ blockquote footer, blockquote small, blockquote .small {
     color: #fff;
     font-size: 18px;
     font-weight: 400;
-    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-family: "Montserrat", Helvetica, sans-serif;
     margin: 0;
     line-height: 50px;
   }
@@ -2491,7 +2481,7 @@ blockquote footer, blockquote small, blockquote .small {
 
   .ajax-page-wrapper {
     padding-left: 20px;
-    padding-right: 20px; 
+    padding-right: 20px;
   }
 
   .lm-pricing .lm-package {
